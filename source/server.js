@@ -154,7 +154,7 @@ export default class StaticmanAPI {
       '/v:version/entry/:service/:username/:repository/:branch/:property',
       this.bruteforce.prevent,
       StaticmanAPI.requireApiVersion([3]),
-      StaticmanAPI.requireService(['github', 'gitlab']),
+      StaticmanAPI.requireService(['github', 'gitlab', 'onedev']),
       StaticmanAPI.requireParams(['fields']),
       this.controllers.process
     );
@@ -192,7 +192,7 @@ export default class StaticmanAPI {
       '/v:version/auth/:service/:username/:repository/:branch/:property',
       this.bruteforce.prevent,
       StaticmanAPI.requireApiVersion([2, 3]),
-      StaticmanAPI.requireService(['github', 'gitlab']),
+      StaticmanAPI.requireService(['github', 'gitlab', 'onedev']),
       this.controllers.auth
     );
 

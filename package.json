@@ -43,6 +43,7 @@
     "express-jsdoc-swagger": "^1.2.0",
     "express-recaptcha": "^2.1.0",
     "gitlab": "^3.5.1",
+    "got": "^11.8.2",
     "js-yaml": "^3.10.0",
     "jsonwebtoken": "^8.4.0",
     "mailgun-js": "^0.22.0",

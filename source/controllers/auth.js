@@ -19,6 +19,9 @@ export default async (req, res) => {
           siteConfig.get('gitlabAuth.redirectUri')
         );
       break;
+    case 'onedev':
+      requestAccessToken = (siteConfig) => null;
+      break;
     default:
       requestAccessToken = (siteConfig) =>
         oauth.requestGitHubAccessToken(

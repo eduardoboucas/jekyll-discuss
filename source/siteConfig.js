@@ -130,6 +130,21 @@ export const schema = {
       default: '',
     },
   },
+  onedevBaseUrl: {
+    doc: 'Base URL for the OneDev API.',
+    format: String,
+    default: 'https://code.onedev.io/api',
+  },
+  onedevUsername: {
+    doc: 'Username for the OneDev API.',
+    format: String,
+    default: '',
+  },
+  onedevPassword: {
+    doc: 'Password or Token for the OneDev API.',
+    format: String,
+    default: '',
+  },
   moderation: {
     doc:
       'When set to `true`, a pull request with the data files will be created to allow site administrators to approve or reject an entry. Otherwise, entries will be pushed to `branch` immediately.',

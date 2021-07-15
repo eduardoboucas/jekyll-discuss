@@ -108,6 +108,24 @@ export const schema = {
     default: '',
     env: 'GITLAB_TOKEN',
   },
+  onedevBaseUrl: {
+    doc: 'Base URL for the OneDev API.',
+    format: String,
+    default: 'https://code.onedev.io/api',
+    env: 'ONEDEV_BASE_URL',
+  },
+  onedevUsername: {
+    doc: 'Username for the OneDev API.',
+    format: String,
+    default: '',
+    env: 'ONEDEV_USERNAME',
+  },
+  onedevPassword: {
+    doc: 'Password or Token for the OneDev API.',
+    format: String,
+    default: '',
+    env: 'ONEDEV_PASSWORD',
+  },
   port: {
     doc: 'The port to bind the application to.',
     format: 'port',
